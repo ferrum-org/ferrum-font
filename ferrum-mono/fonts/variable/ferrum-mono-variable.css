@@ -1,0 +1,19 @@
+/*
+ * Ferrum Mono — variable fonts, wght 100-800, upright and italic —
+ * SIL Open Font License 1.1 (see OFL.txt in the repository root).
+ * Unhinted: where Windows rendering at small sizes matters, use the statics.
+ */
+@font-face {
+  font-family: "Ferrum Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("FerrumMono%5Bwght%5D.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Ferrum Mono";
+  font-style: italic;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("FerrumMono-Italic%5Bwght%5D.woff2") format("woff2");
+}

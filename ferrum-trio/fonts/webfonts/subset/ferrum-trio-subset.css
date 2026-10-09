@@ -1,0 +1,166 @@
+/*
+ * Ferrum Trio, split by script: the browser downloads only the ranges a page uses.
+ * SIL Open Font License 1.1 (see OFL.txt in the repository root).
+ * Kerning between letters of different subsets (Latin next to Cyrillic) is not applied;
+ * use ../ferrum-trio.css (one file per weight) where that matters.
+ */
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }
+/* cyrillic-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.cyrillic-ext.woff2") format("woff2"); unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F, U+0300-036F; }
+/* cyrillic */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0300-036F; }
+/* latin-ext */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0300-036F; }
+/* latin */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0300-036F; }
+/* symbols */
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.symbols.woff2") format("woff2"); unicode-range: U+02D8-02D9, U+02DB, U+039B, U+03A9, U+03BB-03BC, U+03C0, U+0E3F, U+1EBC-1EBD, U+2070, U+2074-2079, U+2080-2089, U+2117, U+2153-2155, U+215B-215E, U+2190, U+2192, U+2194-2199, U+21A9-21AA, U+21B0-21B1, U+21B3-21B5, U+21B9, U+21C6, U+21E4-21E5, U+21E7, U+21EA, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2236, U+2248, U+2260, U+2264-2265, U+2303, U+2318, U+2325-2327, U+232B, U+238B, U+23CE, U+2460-2468, U+24EA, U+24FF-259F, U+25CA-25CB, U+25CF, U+25E6, U+2713-2718, U+2776-277E, U+3003, U+301C, U+FB01-FB02; }

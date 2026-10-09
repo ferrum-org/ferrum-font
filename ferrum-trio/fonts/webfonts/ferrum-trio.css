@@ -1,0 +1,23 @@
+/*
+ * Ferrum Trio — SIL Open Font License 1.1 (see OFL.txt in the repository root)
+ * Based on Paper Mono (c) Lost Coast Labs, Inc. and Geist Mono (c) Vercel.
+ *
+ * The letters of Ferrum Mono on three widths: half a cell (I i l . ,),
+ * one cell, one and a half (Ш Щ Ю Ж Ы М, m w M W). Kerning is on by default.
+ */
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumTrio-Thin.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLight.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumTrio-Light.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumTrio-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumTrio-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumTrio-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumTrio-ThinItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumTrio-ExtraLightItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumTrio-LightItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumTrio-Italic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumTrio-MediumItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumTrio-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumTrio-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Trio"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumTrio-ExtraBoldItalic.woff2") format("woff2"); }

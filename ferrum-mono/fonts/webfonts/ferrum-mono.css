@@ -1,0 +1,24 @@
+/*
+ * Ferrum Mono — SIL Open Font License 1.1 (see OFL.txt in the repository root)
+ * Based on Paper Mono (c) Lost Coast Labs, Inc. and Geist Mono (c) Vercel.
+ *
+ * Kerning lives in stylistic set ss20 and is off by default, so code keeps
+ * the monospace grid. Turn it on for headings and running text:
+ *   .text { font-feature-settings: "ss20"; }
+ */
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 100; font-display: swap; src: url("FerrumMono-Thin.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 200; font-display: swap; src: url("FerrumMono-ExtraLight.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 300; font-display: swap; src: url("FerrumMono-Light.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("FerrumMono-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("FerrumMono-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("FerrumMono-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 700; font-display: swap; src: url("FerrumMono-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: normal; font-weight: 800; font-display: swap; src: url("FerrumMono-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 100; font-display: swap; src: url("FerrumMono-ThinItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 200; font-display: swap; src: url("FerrumMono-ExtraLightItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 300; font-display: swap; src: url("FerrumMono-LightItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 400; font-display: swap; src: url("FerrumMono-Italic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 500; font-display: swap; src: url("FerrumMono-MediumItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 600; font-display: swap; src: url("FerrumMono-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 700; font-display: swap; src: url("FerrumMono-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Ferrum Mono"; font-style: italic; font-weight: 800; font-display: swap; src: url("FerrumMono-ExtraBoldItalic.woff2") format("woff2"); }
