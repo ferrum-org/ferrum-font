@@ -60,6 +60,7 @@ def masters(PAPER_VAR, GEIST_VAR, WORK):
     run("marks.py", out)
     run("locl.py", out, "--variable")
     run("symbols.py", out, "--variable")
+    run("arch.py", out)
     run("chisel.py", out, "--variable")
     run("contrast.py", out, "--variable")
     run("rename.py", out, ttf)

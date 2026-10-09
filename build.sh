@@ -30,6 +30,7 @@ $PY addcyrl.py  "$WORK/out"
 $PY marks.py    "$WORK/out"
 $PY locl.py     "$WORK/out"
 $PY symbols.py  "$WORK/out"
+$PY arch.py     "$WORK/out"
 $PY chisel.py   "$WORK/out"
 $PY contrast.py "$WORK/out"
 $PY rename.py   "$WORK/out" ../fonts/ttf
