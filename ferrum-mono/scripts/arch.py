@@ -1,11 +1,16 @@
-"""Diagonal curved entry at the top of lowercase l and r.
+"""Diagonal entry strokes at the top of lowercase l and r.
 
-The flat horizontal terminal at the top-left of l (at the ascender) and the
-horizontal shelf at the top of the left part of r (at x-height) are changed
-to a curved diagonal: one on-curve corner per letter becomes an off-curve
-guide, so the outline sweeps from lower-left to upper-right with a pointed tip
-at the left.  No points are added or removed, only one flag and one coordinate
-per letter change, so variable masters stay point-compatible.
+l: the flat horizontal at the ascender top-left becomes a curved diagonal —
+   the on-curve corner turns into an off-curve guide, sweeping from the inner
+   bay up to the stem top with a pointed tip at the left.
+
+r: the flat arm shelf (top-left corner at x-height) is lowered to create a
+   straight diagonal from the pointed left tip up to the right end of the arm.
+   The point stays on-curve (no flag change), so the outline stays polygonal
+   and avoids curvature artifacts at the arm-shoulder junction.
+
+No points are added or removed, only one coordinate (and for l, one flag) per
+letter change, so variable masters stay point-compatible.
 
 Must run after fix.py, before chisel.py.
 Usage: arch.py DIR [--variable]
@@ -13,7 +18,7 @@ Usage: arch.py DIR [--variable]
 import sys, glob
 from fontTools.ttLib import TTFont
 
-GUIDE = 0.62   # guide sits 62% of the way from inner_y up to top_y
+GUIDE = 0.62   # tip sits 62% of the way from inner_y up to top_y
 
 
 def _top_left_idx(coords, flags):
@@ -39,24 +44,22 @@ def _xh_left_idx(coords, flags, xh):
         for di in (-1, 1):
             j = (i + di) % n
             if (flags[j] & 1) and abs(coords[j][1] - y) < 2:
-                # i is on a straight horizontal at xh; track leftmost
                 if best is None or x < coords[best][0]:
                     best = i
     return best
 
 
-def _apply(g, glyf, find_fn, **kw):
+def _apply_l(g, glyf):
+    """l: off-curve bezier sweep — top-left corner → off-curve guide."""
     coords = list(g.coordinates)
     flags = bytearray(g.flags)
 
-    idx = find_fn(coords, flags, **kw)
+    idx = _top_left_idx(coords, flags)
     if idx is None:
         return False
 
     x, top_y = coords[idx]
     n = len(coords)
-
-    # inner_y: the y of the nearest on-curve neighbour that is lower
     inner_y = None
     for di in (-1, 1):
         j = (idx + di) % n
@@ -67,9 +70,36 @@ def _apply(g, glyf, find_fn, **kw):
         return False
 
     guide_y = round(inner_y + (top_y - inner_y) * GUIDE)
-
-    flags[idx] = flags[idx] & ~1       # on-curve → off-curve
+    flags[idx] = flags[idx] & ~1    # on-curve → off-curve
     coords[idx] = (x, guide_y)
+
+    g.coordinates = type(g.coordinates)(coords)
+    g.flags = flags
+    return True
+
+
+def _apply_r(g, glyf, xh):
+    """r: straight diagonal shelf — top-left arm corner lowered, stays on-curve."""
+    coords = list(g.coordinates)
+    flags = bytearray(g.flags)
+
+    idx = _xh_left_idx(coords, flags, xh)
+    if idx is None:
+        return False
+
+    x, top_y = coords[idx]
+    n = len(coords)
+    inner_y = None
+    for di in (-1, 1):
+        j = (idx + di) % n
+        if (flags[j] & 1) and coords[j][1] < top_y - 4:
+            inner_y = coords[j][1]
+            break
+    if inner_y is None:
+        return False
+
+    tip_y = round(inner_y + (top_y - inner_y) * GUIDE)
+    coords[idx] = (x, tip_y)       # on-curve flag unchanged
 
     g.coordinates = type(g.coordinates)(coords)
     g.flags = flags
@@ -84,8 +114,8 @@ def process(path):
     changed = 0
 
     for ch, fn, kw in (
-        ("l", _top_left_idx, {}),
-        ("r", _xh_left_idx, {"xh": xh}),
+        ("l", _apply_l, {}),
+        ("r", _apply_r, {"xh": xh}),
     ):
         if ord(ch) not in cm:
             continue
@@ -94,7 +124,7 @@ def process(path):
         if g.isComposite() or g.numberOfContours <= 0:
             continue
         g.expand(glyf_table)
-        if _apply(g, glyf_table, fn, **kw):
+        if fn(g, glyf_table, **kw):
             g.recalcBounds(glyf_table)
             f["hmtx"][name] = (f["hmtx"][name][0], getattr(g, "xMin", 0))
             changed += 1
