@@ -81,11 +81,11 @@ for src in sorted((MONO / "fonts" / "variable").glob("FerrumMono*.ttf")):
     dst_w2 = VAR_OUT / dst.name.replace(".ttf", ".woff2")
     f2 = TTFont(str(dst)); f2.flavor = "woff2"; f2.save(str(dst_w2))
 
-# NF — copy as-is (icon glyphs need no contrast)
-print("\n=== NF (copy) ===")
+# NF — apply arch+contrast to text glyphs (icon glyphs are outside the glyph ranges touched)
+print("\n=== NF ===")
 for src in sorted((MONO / "fonts" / "nerd").glob("FerrumMonoNF-*.ttf")):
     dst = NF_OUT / src.name.replace("FerrumMonoNF-", "FerrumExperimentalNF-")
-    shutil.copy2(src, dst)
-    print(f"  {dst.name}")
+    print(f"  {src.name}")
+    apply(src, dst)
 
 print("\nDone. Run specimen.py to regenerate specimen.png.")
