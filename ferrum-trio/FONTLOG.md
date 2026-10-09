@@ -8,6 +8,12 @@ from Geist Mono, and is released under the SIL Open Font License 1.1.
 Ferrum Trio is not affiliated with or endorsed by Paper (Lost Coast Labs, Inc.)
 or Vercel.
 
+## 1.004
+
+Built from Ferrum Mono 1.005: diagonal tops on l and r (`arch.py`),
+stronger pen contrast (VERT 0.024, HORZ 0.090), wider bottom arches
+(CALM 0.26 — о е р б ц no longer pinch in ExtraBold).
+
 ## 1.003
 
 Built from Ferrum Mono 1.004: open terminals (cut across the stroke, +20°)
