@@ -32,11 +32,11 @@ from fontTools.ttLib.removeOverlaps import skPathFromGlyph
 import pathops
 
 AXIS = math.radians(30)        # tilt of the stress, from vertical stems
-VERT = 0.016                   # stems: extra thickness per side, x stem
-HORZ = 0.048                   # horizontals: thinner per side, x stem
+VERT = 0.024                   # stems: extra thickness per side, x stem
+HORZ = 0.090                   # horizontals: thinner per side, x stem
 ENERGY = 0.02                  # weight of the bending energy of the displacement
 FAIR = 6000.0                  # weight of curvature continuity at smooth joins (units x radius)
-CALM = 0.20                    # curvature jumps aim at this share of the original ones
+CALM = 0.18                    # curvature jumps aim at this share of the original ones
 PROFILE = 300.0                # weight of following the offset curve's own curvature
 SAMPLES = 10                   # samples per curve segment
 CORNER = math.radians(12)      # a turn sharper than this is a corner
