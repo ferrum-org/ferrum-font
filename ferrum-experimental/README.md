@@ -24,14 +24,13 @@ CALM 0.26 (was 0.18), which widens the bottom arches of round letters
 Install from `fonts/ttf/` (uprights + italics) or use the NF variants in
 `fonts/nerd/` for terminals with Nerd Fonts icons.
 
-No webfonts or variable font in this folder — use Ferrum Mono's `fonts/`
-for those; the variable masters aren't rebuilt here.
+Web fonts (WOFF2 + CSS) are in `fonts/webfonts/`. Variable fonts are in `fonts/variable/`.
 
 ## Rebuild
 
 ```sh
-python -I ferrum-mono/scripts/arch.py     <path/to/FerrumMono-*.ttf>
-python -I ferrum-mono/scripts/contrast.py <path/to/FerrumMono-*.ttf>
+python -I ferrum-experimental/scripts/arch.py     <path/to/FerrumMono-*.ttf>
+python -I ferrum-experimental/scripts/contrast.py <path/to/FerrumMono-*.ttf>
 # VERT=0.024  HORZ=0.090  CALM=0.26  FAIR=6000  ENERGY=0.02
 ```
 

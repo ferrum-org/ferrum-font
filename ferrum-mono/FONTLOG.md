@@ -10,18 +10,27 @@ or Vercel.
 
 ## 1.005
 
-- Diagonal ascender tops (`arch.py`): the flat horizontal terminal at the top
-  of lowercase **l** and the arm shelf of lowercase **r** are now a curved
+Note: the changes described here were developed for and applied in
+**ferrum-experimental**. The Mono published binaries at this version do not
+include them.
+
+- Contrast parameters explored for Experimental (documented here for
+  reference): VERT 0.016 → **0.024**, HORZ 0.048 → **0.090** (stronger pen
+  angle, ~0.82× the stem on horizontals). Curvature-jump target raised
+  0.18 → **0.26** (CALM), widening the bottom arches of round letters
+  (о е р б ц etc.) so they no longer pinch in ExtraBold.
+- `arch.py` diagonal tops (l and r): the flat horizontal terminal at the top
+  of lowercase **l** and the arm shelf of lowercase **r** become a curved
   diagonal. In **l** the top-left corner becomes an off-curve guide at 62% of
   the ascender height, sweeping the top into a concave arc. In **r** the
   arm-shelf corner stays on-curve but its Y is lowered to 62% of the distance
   between the inner bay top and the shelf, creating a pointed diagonal without
   curvature artifacts at the shoulder. No points added or removed; variable
   masters stay compatible.
-- Contrast tightened: VERT 0.016 → **0.024**, HORZ 0.048 → **0.090** (stronger
-  pen angle, ~0.82× the stem on horizontals). Curvature-jump target raised
-  0.18 → **0.26** (CALM), widening the bottom arches of round letters
-  (о е р б ц etc.) so they no longer pinch in ExtraBold.
+
+`arch.py` diagonal tops (l and r) and the contrast parameters above are
+applied in ferrum-experimental; the Mono published binaries at this version
+do not include them.
 
 ## 1.004
 

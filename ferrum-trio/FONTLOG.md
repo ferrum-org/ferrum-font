@@ -10,9 +10,10 @@ or Vercel.
 
 ## 1.004
 
-Built from Ferrum Mono 1.005: diagonal tops on l and r (`arch.py`),
-stronger pen contrast (VERT 0.024, HORZ 0.090), wider bottom arches
-(CALM 0.26 — о е р б ц no longer pinch in ExtraBold).
+Built from Ferrum Mono 1.004. Contrast parameters for Ferrum Experimental
+documented: VERT 0.024, HORZ 0.090, CALM 0.26 (widened bottom arches of
+round letters). Published Trio binaries are the same build as 1.003 with
+no outline changes.
 
 ## 1.003
 

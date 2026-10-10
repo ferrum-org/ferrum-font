@@ -10,7 +10,7 @@ on top of the standard build:
    round letters (о е р б ц etc.).
 
 Fonts are otherwise identical to Ferrum Mono. Same metrics, same features,
-same cell width. Built from Ferrum Mono 1.005 sources.
+same cell width. Built from Ferrum Mono 1.004 binaries with post-processing.
 
 ## Build
 
