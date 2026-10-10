@@ -7,13 +7,13 @@ its fonts, webfonts, build scripts, changelog and specimen.
 |---|---|---|---|---|
 | **Ferrum Mono**: monospace for code, terminals and UI | [`ferrum-mono/`](ferrum-mono/) | Latin, Cyrillic (+ Bulgarian, Serbian, Macedonian forms) | Thin–ExtraBold + italics, variable, NF | 1.005 |
 | **Ferrum Trio**: Ferrum Mono on three widths (½, 1, 1½ cell) for text and headings | [`ferrum-trio/`](ferrum-trio/) | Latin, Cyrillic (+ Bulgarian, Serbian, Macedonian forms) | Thin–ExtraBold + italics, variable | 1.004 |
-| **Ferrum Experimental**: Ferrum Mono with diagonal tops on l/r and stronger pen contrast | [`ferrum-experimental/`](ferrum-experimental/) | same as Ferrum Mono | Thin–ExtraBold + italics, NF | 1.005 |
+| **Ferrum Mono Experimental**: Ferrum Mono with diagonal tops on l/r and stronger pen contrast | [`ferrum-experimental/`](ferrum-experimental/) | same as Ferrum Mono | Thin–ExtraBold + italics, NF | 1.005 |
 
 ![Ferrum Mono specimen](ferrum-mono/specimen.png)
 
 ![Ferrum Trio specimen](ferrum-trio/specimen.png)
 
-![Ferrum Experimental specimen](ferrum-experimental/specimen.png)
+![Ferrum Mono Experimental specimen](ferrum-experimental/specimen.png)
 
 ## Use
 

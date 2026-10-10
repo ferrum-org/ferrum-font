@@ -60,7 +60,7 @@ c = surf.getCanvas()
 c.clear(BG)
 
 # --- title --------------------------------------------------------------------
-text(c, "SemiBold", 124, M, 150, "Ferrum Experimental")
+text(c, "SemiBold", 124, M, 150, "Ferrum Mono Experimental")
 text(c, "Regular", 30, M, 208, "arch + contrast build · Latin + Cyrillic · 8 weights + italics · NF · OFL 1.1", DIM)
 
 # --- weights, upright and italic -----------------------------------------------
@@ -100,7 +100,7 @@ for line in code:
 
 # --- terminal (Ferrum Mono NF) -----------------------------------------------------
 y += 40; rule(c, y); y += 60
-label(c, y, "Ferrum Experimental NF · terminal"); y += 70
+label(c, y, "Ferrum Mono Experimental NF · terminal"); y += 70
 segs = [(0xFF2F5FA8, "  ferrum "), (ACC, "  ~/ferrum-font "), (0xFF3D8B4A, "  main  ")]
 size = 40; cw = 606 * size / 1000
 x = M

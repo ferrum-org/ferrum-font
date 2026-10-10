@@ -1,4 +1,4 @@
-# Ferrum Experimental
+# Ferrum Mono Experimental
 
 Ferrum Mono with two post-processing stages applied on top of the standard
 build. Everything else — metrics, features, glyph set, cell width — is

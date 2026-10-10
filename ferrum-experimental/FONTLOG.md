@@ -1,6 +1,6 @@
-# FONTLOG — Ferrum Experimental
+# FONTLOG — Ferrum Mono Experimental
 
-Ferrum Experimental is Ferrum Mono with two post-processing stages applied
+Ferrum Mono Experimental is Ferrum Mono with two post-processing stages applied
 on top of the standard build:
 
 1. **Diagonal ascender tops** (`arch.py`): the flat horizontal terminal of

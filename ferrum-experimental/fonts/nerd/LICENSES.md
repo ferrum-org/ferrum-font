@@ -1,6 +1,6 @@
-# Ferrum Experimental NF — licenses
+# Ferrum Mono Experimental NF — licenses
 
-Ferrum Experimental NF is Ferrum Mono (SIL Open Font License 1.1, see `../../../OFL.txt`)
+Ferrum Mono Experimental NF is Ferrum Mono (SIL Open Font License 1.1, see `../../../OFL.txt`)
 with the icon glyphs of the [Nerd Fonts](https://www.nerdfonts.com) project
 added, taken from its "Symbols Nerd Font Mono" (release v3.5.1).
 
@@ -33,5 +33,5 @@ https://github.com/ryanoasis/nerd-fonts/tree/master/license-audit and the
 LICENSE files of the individual icon projects linked from
 https://github.com/ryanoasis/nerd-fonts#glyph-sets.
 
-Ferrum Experimental NF is not affiliated with or endorsed by the Nerd Fonts project or
+Ferrum Mono Experimental NF is not affiliated with or endorsed by the Nerd Fonts project or
 any of the icon authors.
